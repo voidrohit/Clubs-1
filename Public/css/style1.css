@@ -12,7 +12,7 @@ body {
 
 /* main element */
 .search-box {
-  z-index: 1;
+  z-index: 5;
   top:30%;
   left: 26%;
   position:absolute;
@@ -130,7 +130,7 @@ nav{
 }
 #svglogo{
   z-index: 10;
-  width: 100%;
+  width: 400px;
   height: 200px;
 }
 .nav-links li{
@@ -150,7 +150,7 @@ section{
   align-items: center;
   height: 50%;
   width: 50vh;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgb(105, 103, 103);
   margin: 10% 40%;
   border-radius: 16px;
   z-index: 1;
@@ -187,7 +187,7 @@ header{
   align-items: center;
   height: 50%;
   width: 50vh;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgb(105, 103, 103);
   margin: 10% 40%;
   border-radius: 16px;
   z-index: 1;
@@ -299,8 +299,10 @@ header form input{
 }
 .container2{
   margin-top: 80px;
-  position: relative;
-  float:right;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 50%;
 }
 
 /* All events 2*/
