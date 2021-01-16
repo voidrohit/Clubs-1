@@ -150,21 +150,30 @@ section{
   margin: 10% 40%;
   border-radius: 16px;
   z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
-form{
+section form{
   text-align: center;
   margin-top: 20px;
 
 }
 
 form label{
-  color: #ff5b00;
+  color: black;
+  margin-bottom: 10px;
 }
 form input{
+  height: 30px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: rgba(80,80,80,0.1);
+  background-color: rgba(0,0,0,0.5);
   border: black;
+  color: white;
+  padding: 5px;
 }
 #submit{
   background-color: #ff5b00;
@@ -179,6 +188,11 @@ header{
   margin: 10% 40%;
   border-radius: 16px;
   z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 header form{
   text-align: center;
@@ -197,6 +211,15 @@ header form input{
   color: white;
   padding: 5px;
 }
+
+#submit{
+  color:white;
+  font-weight: bolder;
+  font-variant-caps: all-petite-caps;
+  width: 100px;
+  background-color: black;
+}
+
 #login{
   color:white;
   font-weight: bolder;

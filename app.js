@@ -20,10 +20,10 @@ const DOMAIN = 'sandbox1062316fb8e94d448142cea4ddc64b67.mailgun.org';
 
 const mg = mailgun({apiKey: process.env.API_KEY, domain: DOMAIN});
 app.set('view engine','ejs');
-app.use(express.static("public"));
+app.use(express.static("Public"));
 
 //mongoose.connect("mongodb+srv://admin-vishal:Vishal@2611@cluster0-cujjf.mongodb.net/blogDB",{useNewUrlParser :true});
-mongoose.connect('mongodb://localhost/ClubsDB',{useNewUrlParser :true,useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://rishak192:Mongodb@192@firstproject.8maq4.mongodb.net/ClubsDB?retryWrites=true&w=majority',{useNewUrlParser :true,useUnifiedTopology: true});
 
 app.use(session({
   secret: 'keyboard cat',

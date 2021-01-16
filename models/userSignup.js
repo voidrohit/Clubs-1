@@ -11,7 +11,6 @@ const UserSchema = new Schema({
     email:{
         type:String,
     },
-
 })
 UserSchema.plugin(passportLocalMongoose,{ usernameField : 'username' });
 
