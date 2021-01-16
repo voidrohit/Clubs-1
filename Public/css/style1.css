@@ -5,7 +5,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg,#ff5b00 50%, rgba(80,80,80,.35) 50%);
+  background: linear-gradient(90deg,#ff5b00 50%, #50505059 50%);
 
 }
 
@@ -17,6 +17,7 @@ body {
   left: 26%;
   position:absolute;
   transform:translate(10%, 20%);
+  /* background:#2f3640; */
   border-radius:10px;
   height:60px;
   padding:0px;
@@ -251,8 +252,6 @@ header form input{
   margin-top: 80px;
   position: relative;
   float:center;
-  overflow:hidden;
-  overflow-y: scroll;
 }
 #eventHolder{
   display: flex;
