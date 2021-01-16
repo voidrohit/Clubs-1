@@ -1,0 +1,232 @@
+*{
+  list-style: none;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* All events */
+.container, #add-event {
+  float: left;
+}
+.scroll{
+  overflow-y : scroll;
+}
+.container{
+  margin-top: 80px;
+  position: relative;
+  float:right;
+}
+#eventHolder{
+  display: flex;
+  text-align: center;
+  background-color: rgba(80,80,80,0.5);
+  margin: 0px 0px 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.event-date-holder{
+  padding: 20px 10px;
+  border-radius: 10%;
+  color: #ff5b00;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgba(80,80,80,0.6);
+}
+.event-details-holder{
+  display: flex;
+}
+.event-details-holder h1{
+  font-size: 15px;
+  width: 300px;
+  padding: 15px 5px;
+  border-radius: 5%;
+}
+#eventDescription{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 200px;
+}
+#editTools{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
+}
+/* All events */
+h1{
+    color: black;
+    text-align: center;
+}
+form h1{
+  text-align: center;
+  color: black;
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  background: #ff5b00;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  padding: 10px;
+}
+form{
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+#submit-button{
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  margin-top: 40px;
+  display: block;
+  margin-left: 10%;
+  color: #000000;
+}
+#add-event{
+  display: block;
+  height: 300px;
+  width: 300px;
+  border-radius: 3%;
+  background-color: #000000;
+  background-image: linear-gradient(180deg, #ffffff 0%, #ffffff 74%);
+}
+#event-info{
+  color: #ff5b00;
+  text-align: center;
+}
+#event-info p{
+  text-align: left;
+  color: white;
+}
+#event-info input{
+  color: white;
+  font-size: 0.8rem;
+  display: block;
+  padding: 0.4rem 1rem;
+  background-color: inherit;
+}
+.club{
+  margin-top: 20px;
+}
+/* form starting stylings ------------------------------- */
+.club, .topic, .datetime{
+  margin-left: 15px;
+  position:relative;
+  margin-bottom:40px;
+}
+input{
+  color: black;
+  font-size:10px;
+  padding:5px 5px 5px 5px;
+  display:block;
+  width:200px;
+  border:none;
+  border-bottom:1px solid black;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:black;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:5px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:0px;
+  position:absolute;
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:29%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+/* post */
+#post{
+  height: 500px;
+  width: 500px;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  margin-top: 50%;
+}
+.username{
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #444;
+  margin-left: 10px;
+}
+/* post end */
