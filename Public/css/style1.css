@@ -5,7 +5,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg,#ff5b00 50%, rgba(80,80,80,.35) 50%);
+  background: linear-gradient(90deg,#ff5b00 50%, #50505059 50%);
 
 }
 
@@ -13,11 +13,11 @@ body {
 /* main element */
 .search-box {
   z-index: 1;
-  top:42%;
-  left: 25%;
+  top:30%;
+  left: 26%;
   position:absolute;
   transform:translate(10%, 20%);
-  background:#2f3640;
+  /* background:#2f3640; */
   border-radius:10px;
   height:60px;
   padding:0px;
@@ -129,6 +129,11 @@ nav{
   justify-content: space-around;
   width: 30em;
 }
+#svglogo{
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+}
 .nav-links li{
   list-style: none;
 }
@@ -223,10 +228,26 @@ header form input{
 }
 .container{
   margin-top: 80px;
-  position: relative;
-  float:center;
-  overflow:hidden;
+  position: absolute;
+  left: 26%;
+  height: 70%;
   overflow-y: scroll;
+}
+.container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+.container::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ff5b00;
 }
 #eventHolder{
   display: flex;
@@ -267,17 +288,6 @@ header form input{
   margin-right: 15px;
 }
 /* All events */
-/* All events 2 */
-.container, #add-event {
-  float: left;
-}
-.container2{
-  margin-top: 80px;
-  position: relative;
-  float:right;
-}
-
-/* All events 2*/
 @media (min-width: 500px) {
   .sphere path {
     stroke-width: 1px;

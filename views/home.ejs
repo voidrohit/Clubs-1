@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Club</title>
+  <!-- <link rel = "stylesheet"  href = "css/style2.css" />
+  <link rel = "stylesheet"  href = "css/style3.css" /> -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.css'><link rel="stylesheet" href="css/style1.css">
  <script src="./script.js"></script>
 </head>
 <body>
+  <div class="search-box">
+    <img id="svglogo" src="ClubLogo.svg" alt="ghftydyd">
+    <!-- <span class="search-txt">Club<br>Topic</span>
+    <button class="search-btn">
+        <p>dd/mm/yy --:--</p>
+    </button>  -->
+  </div>
   <section id="signupform">
-    <form class="upForm" action="/signup" method="post">
+    <form class="upForm" action="/signup" method ="post">
         <label for="fname">Username</label><br>
         <input placeholder="Username" type="text" id="fname" name="fname" ><br>
         <label for="email">Email</label><br>
         <input placeholder="Email" type="email" id="email" name="email" ><br>
         <label for="password">Password</label><br>
-        <input placeholder="Password" type="password" id="password" name="password" ><br><br>
+        <input placeholder="Password" type="password" id="password" name="password"><br><br>
         <input id="submit" type="submit" value="Register">
     </form>
   </section>
@@ -81,12 +91,8 @@
     </svg>
   </div>
 </div>
-</div>
 <div class="timeline">
   <div class="container">
-  </div>
-
-   <div class="container">
     <%for(var i = 0; i < Event.length; i++){%>
         <ul id="upcomingEvents">
             <li id="eventHolder">
@@ -96,58 +102,14 @@
                 <div class="event-details-holder">
                   <h1><%=Event[i].event%></h1>
                   <span id="eventDescription"><%=Event[i].name%></span>
-
                 </div>
+               <!-- <form class="container"id="eventHolder" id="eventHolder"action= "/delete" method = "post">
+                  <input type="checkbox" name="checkbox" value="<%=Event[i]._id%>" onChange="this.form.submit()"/>
+                </form> -->
             </li>
         </ul>
       <%}%>
-
-</div>
   </div>
-  <div class="container2">
-    <ul id="upcomingEvents">
-        <li id="eventHolder">
-            <div class="event-date-holder">
-              <span id="dateNumber">23</span>
-              <span id="dateDay">Jan</span>
-            </div>
-            <div class="event-details-holder">
-              <h1>Topics should not be more than </h1>
-              <span id="eventDescription">Club</span>
-                <ul id="editTools">
-                  <li><i class="fa fa-trash" id="removeEvent"></i></li>
-                </ul>
-            </div>
-          </li>
-        <li id="eventHolder">
-            <div class="event-date-holder">
-              <span id="dateNumber">23</span>
-              <span id="dateDay">Jan</span>
-            </div>
-            <div class="event-details-holder">
-              <h1>Topics should not be more than </h1>
-              <span id="eventDescription">Club</span>
-                <ul id="editTools">
-                  <li><i class="fa fa-trash" id="removeEvent"></i></li>
-                </ul>
-            </div>
-          </li>
-        <li id="eventHolder">
-            <div class="event-date-holder">
-              <span id="dateNumber">23</span>
-              <span id="dateDay">Jan</span>
-            </div>
-            <div class="event-details-holder">
-              <h1>Topics should not be more than </h1>
-              <span id="eventDescription">Club</span>
-                <ul id="editTools">
-                  <li><i class="fa fa-trash" id="removeEvent"></i></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-  </div>
-</div>
 <!-- partial -->
   <script src='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.js'></script>
   <script  src="./script.js"></script>

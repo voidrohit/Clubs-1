@@ -15,27 +15,29 @@
       <form id="event-info" action="/" method="post">
           <h1>Add Event</h1>
               <div class="club">
-                <input style="color: black;" type="text" name = "ClubName"required>
+                <input style="color: black;" id="textinput"type="text" name = "ClubName"required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Club<span style="color: red;">*</span></label>
               </div>
               <div class="topic">
-                <input style="color: black;" type="text"name = "event" required>
+                <input style="color: black;" id="textinput"type="text"name = "event" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Topic<span style="color: red;">*</span></label>
               </div>
               <div class="datetime">
-                <input style="color: black;" type="datetime-local"name="Date" required>
+                <input style="color: black;"id="textinput" type="datetime-local"name="Date" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label></label>
               </div>
               <div class="submit">
-                  <input style="background-color: #ff5b00;";" type="submit" id="submit-button">
+                  <input style="background-color: #ff5b00;";" type="submit" id="submit-button" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
               </div>
       </form>
+
+
   </div >
 
    <div class="container">
@@ -49,9 +51,9 @@
                   <h1><%=Event[i].event%></h1>
                   <span id="eventDescription"><%=Event[i].name%></span>
                 </div>
-               <!-- <form class="container"id="eventHolder" id="eventHolder"action= "/delete" method = "post">
+               <form class="container"id="eventHolder" id="eventHolder"action= "/delete" method = "post">
                   <input type="checkbox" name="checkbox" value="<%=Event[i]._id%>" onChange="this.form.submit()"/>
-                </form> -->
+                </form>
             </li>
         </ul>
       <%}%>
